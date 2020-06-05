@@ -187,5 +187,5 @@ LOGGING = {
             'propagate': True,  # 是否继续传递日志信息
             'level': 'INFO',  # 日志接收的最低日志级别
         },
-    }
+    },
 }
