@@ -16,9 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
+import logging
+# 1导入系统的logging
+# 2创建(获取)日志器
+# 使用日志器记录信息
+
+logger = logging.getLogger('django')
 
 
 def log(request):
+    logger.info('info')
     return HttpResponse('test')
 
 
